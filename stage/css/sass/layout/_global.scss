@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+.page
+{
+    transition: .3s;
+    will-change: width;
+    .content-area
+    {
+        float: right;
+        width: calc(100% - 250px);
+    }
+    
+}
