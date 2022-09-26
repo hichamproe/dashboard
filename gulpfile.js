@@ -24,7 +24,6 @@ var   gulp           = require('gulp'),
             .pipe(autoprefixer())
             .pipe(concat('main.css'))
             .pipe(gulp.dest("dist/css"))
-            .pipe(livereload())
 
       });
       // Gulp Task Your Javascript
@@ -37,9 +36,11 @@ var   gulp           = require('gulp'),
       });
       // Task All
       gulp.task('watch', function () {
-         require('./server.js');
-         livereload.listen();
-         gulp.watch("stage/html/*.pug", gulp.series('html'));
-         gulp.watch(["stage/css/**/*.css", "stage/css/**/*.scss"] , gulp.series('css'));
-         gulp.watch("stage/js/*.js", gulp.series('js'));
+         require('./server.js')
+         livereload.listen()
+         gulp.watch("stage/html/*.pug", gulp.series('html'))
+         gulp.watch(["stage/css/**/*.css", "stage/css/**/*.scss"] , gulp.series('css'))
+         gulp.watch("stage/js/*.js", gulp.series('js'))
+         
+
       });

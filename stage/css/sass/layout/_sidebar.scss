@@ -8,8 +8,124 @@
         top: 0;
         left:0;
         height: 100%;
+        padding: 20px;
         background-color: #333333;
         color: #ffffff;
-        text-align: center;
+        transition: .3s;
+        .logo-area
+        {
+            font-weight: bold;
+            font-size: 1.4em;
+            margin-bottom: 30px;
+            padding: 10px;
+        }
+        .link-area 
+
+        {
+
+             // all links
+             li
+             {
+                 a
+                 {
+                     color: #bfb8b8;
+                     display: block;
+                     padding: 10px 20px;
+                     position: relative;
+                     transition: .3s;
+ 
+                     &:hover
+                     {
+                        text-decoration: none;
+                        color: #fff;
+                        
+                     }
+                     
+                 }
+             }
+            //  Main Links
+           >  
+
+           li
+
+           > 
+           a 
+
+            {
+                color: #fff;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &::before
+                {
+                    content: "";
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    top: 50%;
+                    left: 0;
+                    border-radius: 50%;
+                    border: 2px solid #fff;
+                    transform: translateY(-50%);
+
+                    
+                }
+                &:hover
+                {
+                    padding-left: 25px;
+                }
+            }
+            .child-links
+            {
+                display: none;
+                position: relative;
+                &::before
+                {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 3px;
+                    height: 100%;
+                    background-color: #666666;
+                    
+                }
+                a 
+                    {
+                        display: flex;
+                        align-items: center;
+                        color: #ffffff;
+                        &:hover::before 
+                        {
+                            content: "";
+                            position: absolute;
+                            width: 3px;
+                            left: 0;
+                            top: 0;
+                            height: 100%;
+                            background-color: #ffffff;
+                        }
+                    }
+            }
+            .toggle-submenue
+            {
+                font-size: 14px;
+            }
+            .icon.down
+            {
+                transform: rotate(90deg);
+            }
+           
+        }
+        &.no-sidebar
+        {
+            left: -250px;
+        }
+        &.toggle-sidebar
+        {
+            cursor: pointer;
+        }
     }
+   
 }

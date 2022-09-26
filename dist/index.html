@@ -6,14 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my home page </title>
     <link rel="shortcut icon" href="images/monitor.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body> 
     <div class="page home-page"> 
-      <div class="sidebar">sidebar</div>
+      <div class="sidebar">
+        <div class="logo-area text-center">hichampro </div>
+        <ul class="link-area list-unstyled"> 
+          <li><a href="#">home page</a></li>
+          <li><a class="toggle-submenue" href="#">forms<i class="fa-solid fa-chevron-right icon"></i></a>
+            <ul class="child-links list-unstyled">
+              <li><a href="#">text area</a></li>
+              <li><a href="#">input</a></li>
+              <li><a href="#">checkbpox</a></li>
+              <li><a href="#">radio</a></li>
+            </ul><a class="toggle-submenue" href="#">misc<i class="fa-solid fa-chevron-right icon"></i></a>
+            <ul class="child-links list-unstyled">
+              <li><a href="#">text area</a></li>
+              <li><a href="#">input</a></li>
+              <li><a href="#">checkbpox</a></li>
+              <li><a href="#">radio</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
       <div class="content-area"> 
+        <header><i class="fa fa-exchange fa-2x toggle-sidebar" aria-hidden="true"></i></header>
         <h1>my home page </h1>
       </div>
     </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"> </script>
   </body>
 </html>
